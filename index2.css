@@ -270,12 +270,14 @@
     gap: var(--gap-xl);
     min-width: 26.75rem;
     max-width: 100%;
+    margin-top: -13rem;
   }
   .innovation-amico-1-icon {
     height: 45rem;
     position: relative;
     object-fit: fill;
     max-width: 100%;
+    margin-top: -2rem;
   }
   .title-container {
     width: 75.063rem;
@@ -2741,6 +2743,7 @@
     .innovation-amico-1-icon,
     .title {
       flex: 1;
+      width: 50px;
     }
     .title-container {
       flex-wrap: wrap;
@@ -2812,20 +2815,28 @@
       flex-wrap: wrap;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     .navbar-menu {
       display: none;
+    }
+    .frame-parent1{
+      flex-direction: column;
     }
     .navbar-container {
       width: 51.625rem;
     }
     .title {
-      min-width: 100%;
+      height: 10rem;
+      width: 20re;
+    }
+    .innovation-amico-1-icon{
+      height: 20rem;
+    }
+    .inner-text{
+      font-size: ;
     }
     .title-container {
-      padding-top: var(--padding-53xl);
-      padding-bottom: var(--padding-53xl);
-      box-sizing: border-box;
+     flex-direction: row;
     }
     .inner-container {
       gap: 1.5rem 2.956rem;
@@ -2923,8 +2934,140 @@
       padding-bottom: var(--padding-23xl);
       box-sizing: border-box;
     }
+    .h5 span{
+      font-size: 44px;
+    }
+    .hackatly-241 span{
+      font-size: 52px;
+    }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 700px) {
+    .navbar-menu {
+      display: none;
+    }
+    .paragraph-rg p{
+      font-size: 13px;
+    }
+    .frame-parent1{
+      flex-direction: column;
+    }
+    .navbar-container {
+      width: 51.625rem;
+    }
+    .title {
+      height: 10rem;
+      width: 20re;
+    }
+    .innovation-amico-1-icon{
+      height: 20rem;
+    }
+    .title-container {
+     flex-direction: row;
+    }
+    .inner-container {
+      gap: 1.5rem 2.956rem;
+    }
+    .card {
+      gap: 8.775rem 2.188rem;
+    }
+    .card-list {
+      gap: 1.688rem 3.375rem;
+    }
+    .default-container {
+      gap: 2.5rem 5.063rem;
+    }
+    .section1 {
+      padding-top: var(--padding-46xl);
+      padding-bottom: var(--padding-46xl);
+      box-sizing: border-box;
+    }
+    .slider-item {
+      gap: 4.563rem 1.125rem;
+      grid-template-columns: minmax(257px, 1fr);
+    }
+    .tilte {
+      gap: 1.25rem 2.5rem;
+    }
+    .card4 {
+      padding-bottom: 7.563rem;
+    }
+    .default-container1,
+    .parent-subtree {
+      gap: 1.875rem 3.75rem;
+    }
+    .grid {
+      gap: 8.25rem 2.063rem;
+    }
+    .container {
+      gap: 1.25rem 2.5rem;
+    }
+    .section2 {
+      padding-top: var(--padding-26xl);
+    }
+    .container2,
+    .section-wrapper,
+    .section2 {
+      padding-bottom: var(--padding-26xl);
+      box-sizing: border-box;
+    }
+    .container2 {
+      gap: var(--gap-xl);
+      padding-top: var(--padding-46xl);
+      padding-bottom: var(--padding-46xl);
+    }
+    .container1 {
+      gap: 2.563rem 5.125rem;
+      padding-left: var(--padding-89xl);
+      padding-right: var(--padding-89xl);
+      box-sizing: border-box;
+    }
+    .slider-item1 {
+      gap: 4.563rem 1.125rem;
+      grid-template-columns: minmax(257px, 1fr);
+    }
+    .container-parent {
+      gap: 2.188rem 4.375rem;
+    }
+    .secondary-button2,
+    .secondary-button3,
+    .secondary-button4,
+    .secondary-button5,
+    .secondary-button6,
+    .secondary-button7,
+    .secondary-button8,
+    .secondary-button9 {
+      flex-wrap: wrap;
+    }
+    .frame-parent1 {
+      gap: 2.188rem 1.063rem;
+    }
+    .h1-parent {
+      gap: 1.063rem 2.188rem;
+    }
+    .section-inner {
+      padding: var(--padding-3xl) var(--padding-5xl);
+      box-sizing: border-box;
+    }
+    .section3 {
+      padding-top: var(--padding-46xl);
+      padding-bottom: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .default-container2 {
+      gap: 1.875rem 3.75rem;
+    }
+    .tag-cloud {
+      padding-bottom: var(--padding-23xl);
+      box-sizing: border-box;
+    }
+    .h5 span{
+      font-size: 40px;
+    }
+    .hackatly-241 span{
+      font-size: 48px;
+    }
+  }
+  @media screen and (max-width: 500px) {
     .h1 {
       font-size: 2.25rem;
       line-height: 2.688rem;
@@ -2942,9 +3085,14 @@
       font-size: var(--font-size-19xl);
       line-height: 2rem;
     }
-    .paragraph-rg {
-      font-size: var(--font-size-mid);
-      line-height: 1.625rem;
+    .h5 span{
+      font-size: 28px;
+    }
+    .hackatly-241 span{
+      font-size: 36px;
+    }
+    .paragraph-rg p{
+      font-size: 16px;
     }
     .card {
       gap: 8.775rem 1.125rem;
@@ -3012,7 +3160,7 @@
       line-height: 2.688rem;
     }
     .subtitle2 {
-      font-size: var(--font-size-xl);
+      font-size: 10px
       line-height: 1.313rem;
     }
     .h63 {
