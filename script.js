@@ -1,18 +1,3 @@
-$(document).ready(function() {    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},500);       
-            }
-        }); 
-    });
-});
-
 window.onload = function() {
     const entryElements = $('.slider-item');
     let entryIndex = 0;
@@ -50,3 +35,39 @@ window.onload = function() {
         $(entryElements1[entryIndex1]).fadeIn(1000);
     }});
 }
+
+$(document).ready(function() {
+    function checkLazyLoading() {
+        // check elements that are still hidden
+        $('.lazyload').each( function(i){
+            // middle of object and current viewport
+            var
+                middle = $(this).offset().top + ($(this).outerHeight() / 4),
+                top = $(window).scrollTop(),
+                bottom = top + $(window).height()
+            ;
+
+            // if the object is half visibile, show it
+            if (top < middle && middle < bottom) {
+                $(this)
+                    // remove class, since we're already loading this element
+                    .removeClass('lazyload')
+                    // animate to visibile
+                    .animate({'opacity':'1'}, 500)
+                ;
+            }
+        }); 
+    }
+
+    // @see http://ejohn.org/blog/learning-from-twitter/
+    var scrollHappened = false;
+    $(window).scroll(function() {
+        scrollHappened = true;
+    });
+    setInterval(function() {
+        if (scrollHappened) {
+            scrollHappened = false;
+            checkLazyLoading();
+        }
+    });
+});

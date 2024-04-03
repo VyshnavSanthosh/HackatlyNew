@@ -3251,6 +3251,6 @@ i{
   cursor: pointer;
 }
 
-.hidden{
-  display: none;
+.fade_in{
+  opacity: 0;
 }
