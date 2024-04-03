@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
+    <script src="https://kit.fontawesome.com/854cd29b08.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./global2.css" />
     <link rel="stylesheet" href="./index2.css" />
     <link
@@ -15,7 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Exo 2:wght@400&display=swap"
     />
     <link rel="website icon" href="assets/logo.png">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="saas-landing-page-weboceani">
@@ -83,7 +86,6 @@
                 <div class="ellipse green e3"></div>
                 <div class="ellipse green e4"></div>
                 <div class="wrapper-bg-shape">
-                
                 </div>
                 <div class="inner-container">
                   <div class="inner-text">
@@ -145,7 +147,7 @@
               <div class="card-item">
                 <img class="shape-icon" alt="" src="./assets/sponsor.png"/>
 
-                <div class="card2">
+                <div class="card1">
                   <div class="avatar1"></div>
                   <div class="paragraphmd-wrapper">
                     <div class="paragraphmd1">Sponsor Name etc</div>
@@ -155,7 +157,7 @@
               <div class="card-item">
                 <img class="shape-icon" alt="" src="./assets/sponsor.png" />
 
-                <div class="card3">
+                <div class="card1">
                   <div class="avatar2"></div>
                   <div class="paragraphmd-container">
                     <div class="paragraphmd2">Sponsor Name etc</div>
@@ -163,19 +165,89 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="descendant-tree">
-              <div class="left-arrow">
+            <div class="slider-item" style="display: none;">
+              <div class="card-item">
                 <img
-                  class="arrow-right-icon"
+                  class="shape-icon"
                   loading="lazy"
                   alt=""
-                  src="./public/arrowright@2x.png"
+                  src="./assets/sponsor.png"
                 />
+
+                <div class="card1">
+                  <div class="avatar"></div>
+                  <div class="leaf-network">
+                    <div class="paragraphmd">Sponsorzzzzzz Name etc</div>
+                  </div>
+                </div>
               </div>
-              <div class="right-arrow">
-                <i class='fas fa-arrow-right'></i>
+              <div class="card-item">
+                <img class="shape-icon" alt="" src="./assets/sponsor.png"/>
+
+                <div class="card1">
+                  <div class="avatar1"></div>
+                  <div class="paragraphmd-wrapper">
+                    <div class="paragraphmd1">Sponsor Name etc</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-item">
+                <img class="shape-icon" alt="" src="./assets/sponsor.png" />
+
+                <div class="card1">
+                  <div class="avatar2"></div>
+                  <div class="paragraphmd-container">
+                    <div class="paragraphmd2">Sponsor Name etc</div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="slider-item" style="display: none;">
+              <div class="card-item">
+                <img
+                  class="shape-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./assets/sponsor.png"
+                />
+
+                <div class="card1">
+                  <div class="avatar"></div>
+                  <div class="leaf-network">
+                    <div class="paragraphmd">Spon 3 Name etc</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-item">
+                <img class="shape-icon" alt="" src="./assets/sponsor.png"/>
+
+                <div class="card1">
+                  <div class="avatar1"></div>
+                  <div class="paragraphmd-wrapper">
+                    <div class="paragraphmd1">Sponsor Name etc</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-item">
+                <img class="shape-icon" alt="" src="./assets/sponsor.png" />
+
+                <div class="card1">
+                  <div class="avatar2"></div>
+                  <div class="paragraphmd-container">
+                    <div class="paragraphmd2">Sponsor Name etc</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--If you want to add more slider items, increment entryIndex in the if condition in script.js for each item(currently it is 2)-->
+          </div>
+          <div class="descendant-tree">
+              <div class="arrow sp_left">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="arrow sp_right">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
           </div>
           <div class="default-container1" id="themes">
             <div class="tilte">
@@ -372,22 +444,103 @@
                     </div>
                   </div>
                 </div>
+                <div class="slider-item1" style="display: none">
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card10">
+                      <div class="avatar3"></div>
+                      <div class="paragraphmd-frame">
+                        <div class="paragraphmd3">Media Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card11">
+                      <div class="avatar4"></div>
+                      <div class="frame-div">
+                        <div class="paragraphmd4">Sponsor Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card12">
+                      <div class="avatar5"></div>
+                      <div class="paragraphmd-wrapper1">
+                        <div class="paragraphmd5">Sponsor Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-item1" style="display: none">
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card10">
+                      <div class="avatar3"></div>
+                      <div class="paragraphmd-frame">
+                        <div class="paragraphmd3">Media 2 Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card11">
+                      <div class="avatar4"></div>
+                      <div class="frame-div">
+                        <div class="paragraphmd4">Sponsor Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item">
+                    <img
+                      class="shape-icon"
+                      alt=""
+                      src="./assets/sponsor.png"
+                    />
+
+                    <div class="card12">
+                      <div class="avatar5"></div>
+                      <div class="paragraphmd-wrapper1">
+                        <div class="paragraphmd5">Sponsor Name etc</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!--If you want to add more slider items, increment entryIndex1 in the if condition in script.js for each item(currently it is 2)-->
               </div>
               <div class="frame-wrapper1">
                 <div class="left-arrow-parent">
-                  <div class="left-arrow1">
-                    <img
-                      class="arrow-right-icon2"
-                      alt=""
-                      src="./public/arrowright-2@2x.png"
-                    />
+                  <div class="arrow mp_left">
+                    <i class="fa-solid fa-arrow-left"></i>
                   </div>
-                  <div class="right-arrow1">
-                    <img
-                      class="arrow-right-icon3"
-                      alt=""
-                      src="./public/arrowright-3.svg"
-                    />
+                  <div class="arrow mp_right">
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
               </div>
