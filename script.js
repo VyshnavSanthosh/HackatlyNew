@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $('.secondary-button2').click(function(){
+        $(this).find('.faq_text').fadeToggle(200);
+        });
+});
+
 window.onload = function() {
     const entryElements = $('.slider-item');
     let entryIndex = 0;
