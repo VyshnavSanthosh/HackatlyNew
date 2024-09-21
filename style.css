@@ -2805,3 +2805,6 @@ i {
   width: fit-content;
   color: #556098;
 }
+.map_link{
+  height: 32px;
+}
