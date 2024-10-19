@@ -2796,6 +2796,7 @@ i {
 .section4-1 {
   width: 100vw;
   display: flex;
+  margin-top: 4rem;
   flex-flow: row;
   justify-content: space-around;
   align-items: flex-start;
