@@ -672,11 +672,6 @@
   .frame-parent2 {
     width: 80vw;
   }
-}
-@media screen and (max-width: 1200px) {
-  .frame-parent2 {
-    width: 70vw;
-  }
   .timeline .wind{
     display: none;
 
@@ -684,4 +679,10 @@
   .timeline .andr{
     display: block;
   }
+}
+@media screen and (max-width: 1200px) {
+  .frame-parent2 {
+    width: 70vw;
+  }
+
 }
