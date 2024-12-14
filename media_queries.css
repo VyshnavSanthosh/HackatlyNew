@@ -677,4 +677,11 @@
   .frame-parent2 {
     width: 70vw;
   }
+  .timeline .wind{
+    display: none;
+
+  }
+  .timeline .andr{
+    display: block;
+  }
 }
