@@ -298,6 +298,13 @@
   .bg-shape-icon1 {
     width: 40rem;
   }
+
+  .timeline .wind{
+    display: block;
+    width: 600px;
+    height: 461.53px;
+  }
+  
 }
 @media screen and (max-width: 750px) {
   .title-container {
@@ -446,6 +453,16 @@
 @media screen and (max-width: 1200px) {
   .frame-parent2 {
     width: 80vw;
+  }
+}
+
+@media screen and (max-width: 625px){
+  .timeline .wind{
+    display: none;
+
+  }
+  .timeline .andr{
+    display: block;
   }
 }
 @media screen and (max-width: 500px) {

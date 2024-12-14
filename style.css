@@ -2949,3 +2949,16 @@ i {
   height: auto;
   width: 100%;
 }
+
+.timeline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
+}
+
+.timeline .andr{
+  display: none;
+
+}
