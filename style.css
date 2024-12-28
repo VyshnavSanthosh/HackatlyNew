@@ -65,11 +65,6 @@
   padding: var(--padding-3xs);
   color: var(--neutral-white);
 }
-.navlink a {
-  color: #7e808f;
-  text-decoration: none;
-}
-
 .navbar-link1 {
   display: flex;
   flex-direction: row;
@@ -549,8 +544,12 @@
   align-self: stretch;
   flex-direction: row;
   justify-content: center;
-  padding: 0 var(--padding-xl);
+  padding: 0 var(--padding-xl) 4.375rem;
   box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-37xl);
+  color: var(--neutral-gray-300);
+  font-family: var(--paragraph-rg);
 }
 .shape-icon {
   height: 6.875rem;
@@ -791,6 +790,7 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
   max-width: 100%;
+  text-align: center;
 }
 .tilte {
   align-self: stretch;
@@ -2970,4 +2970,269 @@ i {
 .timeline .andr{
   display: none;
 
+}
+
+.phase-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.phase-one .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.themes-for-hackatly-24 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #7e808f;
+  padding: 0 1rem;
+}
+
+/* Media query styles */
+@media screen and (max-width: 768px) {
+  .themes-for-hackatly-24 {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .themes-for-hackatly-24 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.phase-one .results-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.phase-one .results-scroll ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.phase-one .results-scroll li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #7e808f;
+  word-wrap: break-word;
+}
+
+.phase-one .scroll-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.phase-one .scroll-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  min-width: 120px;
+}
+
+.phase-one .results-scroll li:hover {
+  background: #f8f8f8;
+  transform: scale(1.02);
+  color: #000;
+}
+
+.phase-one .scroll-btn:hover {
+  background: #0056b3;
+}
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .phase-one {
+    padding: 2rem 1rem;
+  }
+
+  .themes-for-hackatly-24 {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+  .phase-one .results-scroll {
+    width: 90%;
+    height: 250px;
+  }
+
+  .phase-one .results-scroll li {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .phase-one {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .themes-for-hackatly-24 {
+    font-size: 1.5rem;
+  }
+
+  .phase-one .results-scroll {
+    width: 95%;
+    height: 200px;
+  }
+
+  .phase-one .results-scroll li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .phase-one .scroll-buttons {
+    gap: 0.5rem;
+  }
+
+  .phase-one .scroll-btn {
+    padding: 0.4rem 0.8rem;
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+}
+
+/* View All Button */
+.view-all-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: #5449ff;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #151934;
+  margin: 5% auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #7e808f;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.modal h2 {
+  color: #7e808f;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-list {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.modal-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2e47;
+  color: #7e808f;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.modal-list li:hover {
+  background: #1e2238;
+  color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .modal h2 {
+    font-size: 1.2rem;
+  }
+  
+  .modal-list li {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
 }

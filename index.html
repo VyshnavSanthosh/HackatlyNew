@@ -169,11 +169,33 @@
         </div>
       </section>
 
-      <div class="timeline">
-        <img src="assets/PAth Desk.png" alt="" class="wind">
-        <source media="(max-width : 870px)" srcset="assets/Path Android.png">
-        <img src="assets/Path Android.png" alt="" class="andr">
-      </div>
+   <section class="phase-one">
+     <div class="title">
+       <h1 class="themes-for-hackatly-24">Phase One Result</h1>
+     </div>
+     <div class="results-scroll" id="resultsContainer">
+       <ul id="resultsList">
+       </ul>
+     </div>
+     <div class="scroll-buttons">
+       <button class="scroll-btn" onclick="scrollResults('up')">↑ Scroll Up</button>
+       <button class="scroll-btn" onclick="scrollResults('down')">↓ Scroll Down</button>
+     </div>
+     <button class="view-all-btn" onclick="openModal()">View Complete List</button>
+     
+     <!-- Modal/Popup -->
+     <div id="listModal" class="modal">
+       <div class="modal-content">
+         <span class="close-btn" onclick="closeModal()">&times;</span>
+         <h2>Complete Team List</h2>
+         <div class="modal-list">
+           <ul id="completeList">
+             <!-- Will be populated by JavaScript -->
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
 
       <div class="themescontainermain">
         <div class="themescontainer1" id="themes">
