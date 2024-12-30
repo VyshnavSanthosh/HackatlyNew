@@ -169,6 +169,35 @@
         </div>
       </section>
 
+      <section class="phase-one" id="phase-one-part">
+        <div class="title">
+          <h1 class="themes-for-hackatly-24">Phase One Participants</h1>
+        </div>
+        <div class="results-scroll" id="participantsContainer">
+          <ul id="participantsList">
+            <!-- Will be populated by JavaScript -->
+          </ul>
+        </div>
+        <div class="scroll-buttons">
+          <button class="scroll-btn" onclick="scrollParticipants('up')">↑ Scroll Up</button>
+          <button class="scroll-btn" onclick="scrollParticipants('down')">↓ Scroll Down</button>
+        </div>
+        <button class="view-all-btn" onclick="openParticipantsModal()">View Complete List</button>
+        
+        <!-- Modal/Popup -->
+        <div id="participantsModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeParticipantsModal()">&times;</span>
+            <h2>Complete Participants List</h2>
+            <div class="modal-list">
+              <ul id="completeParticipantsList">
+                <!-- Will be populated by JavaScript -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
    <section class="phase-one">
      <div class="title">
        <h1 class="themes-for-hackatly-24">Phase One Winners</h1>

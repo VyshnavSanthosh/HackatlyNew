@@ -1,19 +1,19 @@
 [
     {
-        "COLLEGE": "College of Engineering Kallooppara",
-        "TEAM": "TEAM FTW"
+        "COLLEGE": "NMAM Institute of Technology ",
+        "TEAM": "MED"
     },
     {
         "COLLEGE": "College of Engineering Kallooppara",
         "TEAM": "Cybernix"
     },
     {
-        "COLLEGE": "RIT KOTTAYAM",
-        "TEAM": "TECH TREKKERS"
+        "COLLEGE": "Mar Athanasius College of Engineering,Kothamangalam",
+        "TEAM": "Tech-Nomads"
     },
     {
-        "COLLEGE": "Cochin University of Science and Technology",
-        "TEAM": "Haskell"
+        "COLLEGE": "RIT KOTTAYAM",
+        "TEAM": "TECH TREKKERS"
     },
     {
         "COLLEGE": "CUSAT",
@@ -24,44 +24,28 @@
         "TEAM": "Swasthi"
     },
     {
-        "COLLEGE": "NMAM Institute of Technology ",
-        "TEAM": "MED"
-    },
-    {
-        "COLLEGE": "NMAM Institution of technology",
-        "TEAM": "Deep Defenders"
-    },
-    {
-        "COLLEGE": "NMAM Institute of Technology ",
-        "TEAM": "EcoCharge"
-    },
-    {
         "COLLEGE": "NMAMIT",
         "TEAM": "Team Balak"
-    },
-    {
-        "COLLEGE": "NMAMIT ",
-        "TEAM": "Zayders"
     },
     {
         "COLLEGE": "College of Engineering, Attingal",
         "TEAM": "Tech Psycho's"
     },
     {
-        "COLLEGE": "Mar Athanasius College of Engineering,Kothamangalam",
-        "TEAM": "Tech-Nomads"
-    },
-    {
         "COLLEGE": "Mar athanasius college of engineering  Kothamangalam",
         "TEAM": "PULSE"
     },
     {
-        "COLLEGE": "Mar Athanasius college of engineering kothamangalam ",
-        "TEAM": "HACK SQUAD"
+        "COLLEGE": "Cochin University of Science and Technology",
+        "TEAM": "Haskell"
+    },
+    {
+        "COLLEGE": "St. Joseph's College of Engineering and Technology, Palai.   Saintgits College of Engineering ",
+        "TEAM": "Quadrene"
     },
     {
         "COLLEGE": "Mar Athanasius college of engineering kothamangalam ",
-        "TEAM": "codeit"
+        "TEAM": "HACK SQUAD"
     },
     {
         "COLLEGE": "College of engineering chengannur ",
@@ -72,12 +56,20 @@
         "TEAM": "SANJEEVANI "
     },
     {
-        "COLLEGE": "MES College of Engineering Kuttippuram",
-        "TEAM": "DarkNova"
-    },
-    {
         "COLLEGE": "COLLEGE Of Engineering Thalassery ",
         "TEAM": "Astra"
+    },
+    {
+        "COLLEGE": "NMAM Institute of Technology ",
+        "TEAM": "EcoCharge"
+    },
+    {
+        "COLLEGE": "Mar Athanasius college of engineering kothamangalam ",
+        "TEAM": "codeit"
+    },
+    {
+        "COLLEGE": "College of Engineering Kallooppara",
+        "TEAM": "TEAM FTW"
     },
     {
         "COLLEGE": "COLLEGE Of Engineering Thalassery ",
@@ -88,12 +80,8 @@
         "TEAM": "Ecobot"
     },
     {
-        "COLLEGE": "GOVERNMENT ENGINEERING COLLEGE THRISSUR ",
-        "TEAM": "Data Vortex "
-    },
-    {
-        "COLLEGE": "St. Joseph's College of Engineering and Technology, Palai.   Saintgits College of Engineering ",
-        "TEAM": "Quadrene"
+        "COLLEGE": "NMAM Institution of technology",
+        "TEAM": "Deep Defenders"
     },
     {
         "COLLEGE": "St. Joseph's College of Engineering and Technology, Palai.   Saintgits College of Engineering ",
@@ -112,8 +100,8 @@
         "TEAM": "Saanvi"
     },
     {
-        "COLLEGE": "CHRIST COLLEGE OF ENGINEERING, IRINJALAKUDA",
-        "TEAM": "REDEFINE"
+        "COLLEGE": "MES College of Engineering Kuttippuram",
+        "TEAM": "DarkNova"
     },
     {
         "COLLEGE": "NEHRU ARTS AND SCIENCE COLLEGE KANHANGAD",
@@ -128,16 +116,16 @@
         "TEAM": "Codex Brothers "
     },
     {
+        "COLLEGE": "CEC, CGC Landran",
+        "TEAM": "Genzzy Squad "
+    },
+    {
         "COLLEGE": "Chalapathi Institute of Technology ",
         "TEAM": "CreaGen"
     },
     {
         "COLLEGE": "Sree Chitra Tirunal College of Engineering Pappanamcode Thiruvananthapuram",
         "TEAM": "Fight Club"
-    },
-    {
-        "COLLEGE": "CEC, CGC Landran",
-        "TEAM": "Genzzy Squad "
     },
     {
         "COLLEGE": "Chandigarh Engineering College",
@@ -150,6 +138,18 @@
     {
         "COLLEGE": "MODEL ENGINNERING COLLEGE, THRIKKAKARA ",
         "TEAM": "Techbuddha"
+    },
+    {
+        "COLLEGE": "CHRIST COLLEGE OF ENGINEERING, IRINJALAKUDA",
+        "TEAM": "REDEFINE"
+    },
+    {
+        "COLLEGE": "NMAMIT ",
+        "TEAM": "Zayders"
+    },
+    {
+        "COLLEGE": "GOVERNMENT ENGINEERING COLLEGE THRISSUR ",
+        "TEAM": "Data Vortex "
     },
     {
         "COLLEGE": "Rajagiri School of Engineering and Technology",

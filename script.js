@@ -212,3 +212,61 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Fetch and display participants data from phase1part.json
+fetch('phase1part.json')
+  .then(response => response.json())
+  .then(data => {
+    const participantsList = document.getElementById('participantsList');
+    const completeParticipantsList = document.getElementById('completeParticipantsList');
+
+    data.forEach(participant => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${participant['Team Name']} - ${participant['College']}`;
+      participantsList.appendChild(listItem.cloneNode(true));
+      completeParticipantsList.appendChild(listItem);
+    });
+  })
+  .catch(error => console.error('Error fetching participants data:', error));
+
+function scrollParticipants(direction) {
+  const container = document.getElementById('participantsContainer');
+  if (direction === 'up') {
+    container.scrollTop -= 100;
+  } else {
+    container.scrollTop += 100;
+  }
+}
+
+function openParticipantsModal() {
+  document.getElementById('participantsModal').style.display = 'block';
+}
+
+function closeParticipantsModal() {
+  document.getElementById('participantsModal').style.display = 'none';
+}
+
+// Auto-scroll functionality for participants
+let participantsScrollInterval;
+
+function startAutoScrollParticipants() {
+  participantsScrollInterval = setInterval(() => {
+    const container = document.getElementById('participantsContainer');
+    container.scrollTop += 1;
+    if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
+      container.scrollTop = 0;
+    }
+  }, 50); // Adjust the speed of scrolling by changing the interval
+}
+
+function stopAutoScrollParticipants() {
+  clearInterval(participantsScrollInterval);
+}
+
+// Start auto-scroll when the page loads
+window.addEventListener('load', startAutoScrollParticipants);
+
+// Stop auto-scroll when user interacts with the scroll buttons
+const scrollButtons = document.querySelectorAll('.scroll-btn');
+scrollButtons.forEach(button => {
+  button.addEventListener('click', stopAutoScrollParticipants);
+});
