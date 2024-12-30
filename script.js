@@ -120,7 +120,7 @@ let scrollInterval;
 // Load team and college data
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('tableConvert.com_xlxmi0.json');
+        const response = await fetch('phase1Win.json');
         teamData = await response.json();
         
         if (!teamData || teamData.length === 0) {
@@ -165,7 +165,7 @@ function updateResultsList(data) {
 
     data.forEach((item) => {
         const li = document.createElement('li');
-        li.innerHTML = `🏆 ${item['Team Name']} - ${item['College']}`;
+        li.innerHTML = `🏆 ${item['TEAM']} - ${item['COLLEGE']}`;
         resultsList.appendChild(li);
     });
 
@@ -186,7 +186,7 @@ function openModal() {
     // Copy items from the global teamData
     teamData.forEach((item) => {
         const li = document.createElement('li');
-        li.innerHTML = `🏆 ${item['Team Name']} - ${item['College']}`;
+        li.innerHTML = `🏆 ${item['TEAM']} - ${item['COLLEGE']}`;
         completeList.appendChild(li);
     });
     
@@ -211,3 +211,4 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
